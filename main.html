@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--the head element ia a container for evryting you want to include but you dont want the users be able to see-->
+		<!--meta is desined to gave information on are html page-->
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title> david website </title>
+	</head>
+    <body>
+        <style>
+            body{
+                background-color: cyan;
+            }
+            #listT{
+                color: lime;
+                background-color: darkred;
+                margin-left: 15px;
+                margin-right: 150px;
+                border-top: 15px solid darkred;
+                border-bottom: 1px solid darkred;
+                border-radius: 15px;
+            }
+            #s{
+                padding-top: 10px;
+                margin-left: 55px;
+            }
+            #list{
+                color: rgb(30, 255, 0);
+                background-color: darkblue;
+                margin-left: 15px;
+                margin-right: 150px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                border-radius: 15px;
+            }
+        </style>
+        <div id="s">
+            <span >Enter your task: <input id="name" type="text"/></span>
+            <button onclick="func()">SAVE</button>
+            <button onclick="clearAll(listT, list)">clearAll</button>
+        </div>
+        <div>
+            <ul id="listT">
+            </ul>
+        </div>
+        <div>
+            <ul id="list">
+            </ul>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>
